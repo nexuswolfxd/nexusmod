@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "nexusmod",
+  "version": "${version}",
+
+  "name": "Nexus Mod",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Nexus"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC BY-NC-SA 3.0",
+  "icon": "assets/nexusmod/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "nexus.nexus.mod.nexusmod"
+    ]
+  },
+  "mixins": [
+    "nexusmod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
